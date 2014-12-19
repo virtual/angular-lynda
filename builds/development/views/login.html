@@ -1,0 +1,20 @@
+<section class="login">
+	<form name="myform" method="get" accept-charset="utf-8" novalidate>
+	  <input name="email" type="email" placeholder="Email" autofocus 
+	  	ng-model="user.email" ng-required="true">
+	  	
+	  	<p class="error validationerror" 
+	  		ng-show="myform.email.$invalid && myform.email.$touched">
+	  		Not valid email</p>
+	  	
+  	<input name="password" type="password" placeholder="Password"  
+	  	ng-model="user.password" ng-required="true">
+	  	<p class="error validationerror" 
+	  		ng-show="myform.password.$invalid && myform.password.$touched">
+	  		passowrd required</p>
+	  	
+	  	 	
+		   <button type="submit"  class="btn"
+		   	ng-disabled="myform.$invalid">Login</button>
+		   <p>or <a href="#/register">register</a></p>
+	</form></section>
