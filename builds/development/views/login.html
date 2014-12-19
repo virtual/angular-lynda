@@ -1,6 +1,8 @@
 <section class="login">
-	<form name="myform" method="get" accept-charset="utf-8" novalidate>
-	  <input name="email" type="email" placeholder="Email" autofocus 
+	<h1>Hello </h1>
+	<form name="myform" method="get" accept-charset="utf-8" novalidate 
+		ng-submit="login()">
+	  <input name="email" type="email" placeholder="Email"  
 	  	ng-model="user.email" ng-required="true">
 	  	
 	  	<p class="error validationerror" 
